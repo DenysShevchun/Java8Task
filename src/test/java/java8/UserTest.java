@@ -130,7 +130,7 @@ public class UserTest {
         });
     }
 
-    public void conditionResult(List<User> userList, UserCheck userCheck) {
+    private void conditionResult(List<User> userList, UserCheck userCheck) {
         for (User user : userList) {
             if (userCheck.conditionCheck(user)) System.out.println(user);
         }
